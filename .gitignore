@@ -1,0 +1,17 @@
+/vendor
+/bin
+composer.phar
+composer.lock
+.idea
+.DS_Store
+.settings
+.buildpath
+.project
+.swp
+/nbproject
+/phpunit.xml
+*.log
+/test.php
+tmp*.xsd
+/tests/logs/*
+/phpunit.xml
