@@ -22,17 +22,4 @@ class CarIdent extends Container
         'ChassisNumber' => ['toString', 'length:|24'],
     ];
 
-    public function validate()
-    {
-        $errors = parent::validate();
-
-        if ($this->LicensePlate == ''
-            && $this->VIN == ''
-            && $this->BodyNumber == ''
-            && $this->ChassisNumber == '') {
-            $errors['VIN'][] = "One of field must be specified";
-        }
-
-        return $errors;
-    }
 }
